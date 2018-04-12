@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.post('/landing-pages', post);
 router.get('/landing-pages', get);
-router.put('/landing-pages', put);
+router.put('/landing-pages/:id', put);
 
 module.exports = router;

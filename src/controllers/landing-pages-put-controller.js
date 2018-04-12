@@ -1,9 +1,10 @@
 const Page = require('../models/page.model');
 
 module.exports = async(req, res) => {
-    const page = req.body.page;
-    page.user = req.user._id;
-    const pageUpdated = await Page.update({ page });
+    const { id:_id } = req.params;
+    const update = req.body;
+    console.log('update ', update);
+    const pageUpdated = await Page.update({ _id }, update);
     res.set('Content-Type', 'application/json');
 
     if (!pageUpdated) return res.status(403).send();

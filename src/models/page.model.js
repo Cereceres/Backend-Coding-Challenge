@@ -1,9 +1,16 @@
 const mongo = require('../database');
 const getModelFromDB = require('./get-model-from-db');
 const Schema = mongo.Schema;
-const schema = Schema({
-    html: String,
-    user: String,
+const schema = new Schema({
+    html: {
+        type: String,
+        required: true
+    },
+    user: {
+        type: String,
+        required: true
+    },
+    slug: String
 }, {
     strict:false
 });
