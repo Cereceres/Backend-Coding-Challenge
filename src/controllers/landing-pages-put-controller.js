@@ -3,7 +3,6 @@ const Page = require('../models/page.model');
 module.exports = async(req, res) => {
     const { id:_id } = req.params;
     const update = req.body;
-    console.log('update ', update);
     const pageUpdated = await Page.update({ _id }, update);
     res.set('Content-Type', 'application/json');
 

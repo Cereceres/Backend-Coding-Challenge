@@ -2,8 +2,8 @@
 const assert = require('assert');
 
 const Page = require('../src/models/page.model');
-describe('Prueba para el servicio de actualizar', () => {
-    it('Debe de actualizar el objeto de la base de datos', async() => {
+describe('test to get page with slug', () => {
+    it('should return the page with slug given', async() => {
         await Page.insert({
             html: `
             <!DOCTYPE html>

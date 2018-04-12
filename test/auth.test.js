@@ -3,8 +3,8 @@ const assert = require('assert');
 
 const User = require('../src/models/user.model');
 const codeBase64 = require('../src/lib/code-base64');
-describe('Prueba para el servicio de actualizar', () => {
-    it('Debe de actualizar el objeto de la base de datos', async() => {
+describe('Test to auth', () => {
+    it('should return the token', async() => {
         await User.insert({
             user:'user to auth',
             pass: codeBase64('pass')

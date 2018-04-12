@@ -10,7 +10,6 @@ before(async() => {
         user:'user',
         pass: codeBase64('pass')
     });
-    console.log('user in bootstrap ', user);
     const { body:{ token } } = await agent
         .post('/api/v1/auth')
         .send({

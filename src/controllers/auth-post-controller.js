@@ -11,7 +11,6 @@ module.exports = async(req, res) => {
 
     res.set('Content-Type', 'application/json');
     user.exp = Math.floor(Date.now() / 1000) + expiresIn;
-    console.log('user ', user);
     const token = jwt.sign(JSON.stringify(userSaved), secret);
     res.send({ token });
 };

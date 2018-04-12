@@ -2,8 +2,8 @@
 const assert = require('assert');
 
 const Page = require('../src/models/page.model');
-describe('Prueba para el servicio de actualizar', () => {
-    it('Debe de actualizar el objeto de la base de datos', async() => {
+describe('Test to landing-page post method', () => {
+    it('should save the page given', async() => {
         await agent
             .post('/api/v1/landing-pages')
             .set({ Authorization: `Bearer ${token}` })
