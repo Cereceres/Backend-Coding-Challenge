@@ -1,0 +1,36 @@
+{
+  "name": "backend-coding-challenge",
+  "version": "1.0.0",
+  "description": "backend-coding-challenge",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --exit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/Backend-Coding-Challenge.git"
+  },
+  "keywords": [
+    "backend-coding-challenge"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/Backend-Coding-Challenge/issues"
+  },
+  "homepage": "https://github.com/Cereceres/Backend-Coding-Challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.14"
+  },
+  "devDependencies": {
+    "supertest": "^3.0.0"
+  }
+}
